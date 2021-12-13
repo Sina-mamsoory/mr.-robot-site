@@ -1,0 +1,29 @@
+*{
+    margin: 0; padding: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hamburger-menue
+{
+    
+}
+
+.hamburger-menue span
+{
+    display:block;
+    width: 50px; height: 10px;
+    background-color: #111;
+    margin: 6px ;
+    border-radius: 20px;
+
+}
+
+.navbar
+{
+    display: none;
+}
