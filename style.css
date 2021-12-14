@@ -5,23 +5,63 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 21, 78);
+    padding: 0 20px;
 
+}
+
+.logo
+{
+    color: #fff;
+    font-size: 20px;
+
+}
+
+   /* hamburger menue */
 .hamburger-menue
 {
-    
+    position: relative;
+    top: 0; left: 0;
+    width: 60px; height: 60px;
+    display: flex;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.hamburger-menue span
+.hamburger-menue div
 {
     display:block;
-    width: 50px; height: 10px;
-    background-color: #111;
-    margin: 6px ;
+    width: 20px; height: 2px;
+    background-color: rgb(250, 249, 249);
     border-radius: 20px;
-
 }
+
+.hamburger-menue div::before,
+.hamburger-menue div::after
+{
+    content: '';
+    position:relative;
+    display: block;
+    width: 20px; height: 2px;
+    background-color: inherit;
+    top: -8px;
+}
+
+.hamburger-menue div::after
+{
+    top: 6px;
+}
+
 
 .navbar
 {
