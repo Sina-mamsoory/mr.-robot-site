@@ -220,7 +220,91 @@ body
 
 
 /* main body */
+
+
 .main-body
 {
-    width: 100vw; height: 600px;
+    width: 96vw; height: 600px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+.container-album
+{
+    display: flex;
+    height: 420px;
+    width: 100vw;
+    overflow: auto;
+    padding: 30px 90px;
+    background: #fff;
+    border-radius: 0px;
+}
+
+.itmes-of-albums img
+{
+    width: 200px; height: 150px;
+}
+
+.itmes-of-albums
+{
+    min-width: 240px; min-height: 350px;
+    border-radius: 16px;
+    padding: 1.6rem;
+    background: linear-gradient(85deg,#434343,#262626);
+    box-shadow: -3rem 0 3rem -2rem #000;
+    transition: transform 0.2s ease;
+}
+
+.itmes-of-albums h1, .itmes-of-albums p
+{
+    color: #fff;
+}
+
+.itmes-of-albums h1
+{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.itmes-of-albums p
+{
+    font-size: 12px;
+    margin: 40px 0;
+}
+
+.itmes-of-albums:not(:first-child)
+{
+    margin-left: -40px;
+}
+
+.itmes-of-albums:hover
+{
+    transform: translate(-02rem,-1rem) rotate(3deg);
+}
+
+.itmes-of-albums:hover ~ .itmes-of-albums
+{
+    transform: translateX(30px);
+}
+
+.container-album::-webkit-scrollbar {
+    width: 10px;
+    height: 13px;
+}
+
+.container-album::-webkit-scrollbar-thumb
+{
+    background: #434343;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+.container-album::-webkit-scrollbar-track
+{
+    background: linear-gradient( 90deg,#f3f0f0,#e6e3e3 1px,#f5f0f0 0,#969494);
+
 }
