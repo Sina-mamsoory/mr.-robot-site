@@ -44,13 +44,13 @@ body
 .left-side::after
 {
     position: relative;
-    left: -75px;
+    left: -63px;
     content: '';
-    width: 70px; height: 1px;
+    width: 50px; height: 0.7px;
     background-color: #fff;
     transform: rotate(90deg);
-
 }
+
 
    /* hamburger menue */
 .hamburger-menue
@@ -164,8 +164,8 @@ body
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     position: relative;
     top: 70px;
     width: 100%; height: 700px;
@@ -188,12 +188,20 @@ body
 
 .slide-show h1
 {
-    font-size: 3.3rem;
-    margin-top: 40px;
+    display: none;
 }
 
-.slide-show p
+
+@media only screen and (min-width:768px)
 {
-    font-size: 20px;
-    margin-bottom: 50px;
+    
+    .slide-show h1
+    {
+        display: block;
+        position: absolute;
+        top: 200px; left: 190px;
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+
 }
